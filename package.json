@@ -1,0 +1,23 @@
+{
+  "name": "injection_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "drop_db": "./node_modules/.bin/sequelize --env database db:drop",
+    "create_db": "./node_modules/.bin/sequelize --env database db:create",
+    "migrate_db": "./node_modules/.bin/sequelize --env database db:migrate",
+    "seed_db": "./node_modules/.bin/sequelize --env database db:seed:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "ejs": "~2.7.4",
+    "mysql2": "^2.0.1",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}
